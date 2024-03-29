@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.github.johannesschaefer</groupId>
+  <groupId>io.github.arbal</groupId>
   <artifactId>webnettools</artifactId>
   <version>1.4.0-SNAPSHOT</version>
   <scm>
-    <connection>scm:git:https://github.com/johannesschaefer/webnettools.git</connection>
-    <url>https://github.com/johannesschaefer/webnettools</url>
+    <connection>scm:git:https://github.com/arbal/webnettools.git</connection>
+    <url>https://github.com/arbal/webnettools</url>
     <tag>HEAD</tag>
   </scm>
   <properties>
@@ -43,8 +43,8 @@
                   <executable>docker</executable>
                   <arguments>
                     <argument>tag</argument>
-                    <argument>johannesschafer/webnettools:${project.version}</argument>
-                    <argument>johannesschafer/webnettools:latest</argument>
+                    <argument>arbal/webnettools:${project.version}</argument>
+                    <argument>arbal/webnettools:latest</argument>
                   </arguments>
                 </configuration>
               </execution>
@@ -58,7 +58,7 @@
                   <executable>docker</executable>
                   <arguments>
                     <argument>push</argument>
-                    <argument>johannesschafer/webnettools:latest</argument>
+                    <argument>arbal/webnettools:latest</argument>
                   </arguments>
                 </configuration>
               </execution>
@@ -72,7 +72,7 @@
                   <executable>docker</executable>
                   <arguments>
                     <argument>tag</argument>
-                    <argument>johannesschafer/webnettools:${project.version}</argument>
+                    <argument>arbal/webnettools:${project.version}</argument>
                     <argument>registry.heroku.com/web-net-tools/web</argument>
                   </arguments>
                 </configuration>
@@ -344,7 +344,7 @@
         <configuration>
           <images>
             <image>
-              <name>johannesschafer/webnettools:${project.version}</name>
+              <name>arbal/webnettools:${project.version}</name>
               <build>
                 <tags>
                   <tag>${project.version}</tag>
